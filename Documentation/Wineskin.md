@@ -12,41 +12,37 @@ Install Homebrew: https://brew.sh/
 
 Click on the link and the rest is self-explanatory. You'll need to paste the command string it gives you on that page into your MacOS Terminal shell prompt.
 
-## Install Wineskin
+## Install Sikarugir
 
-Install Wineskin Winery: https://github.com/Gcenx/WineskinServer
+Install Sikarugir: https://github.com/Sikarugir-App/Sikarugir
 * You can paste this into your MacOS Terminal shell prompt:
  
-`brew install --cask --no-quarantine gcenx/wine/wineskin`
+`brew upgrade
+brew trust Sikarugir-App/sikarugir
+brew install --cask Sikarugir-App/sikarugir/sikarugir`
 
 ## Using Wineskin
 
 * Download the latest x64 version of Beipmu: https://github.com/BeipDev/BeipMU/releases
   * Unzip it and put the folder in a convenient location. You'll need it later.
  
-* Open Wineskin Winery. The first time you do this, you'll need to have it download the rest of what it requires to work. 
-  * Locate and press the '+' button near where it says 'New Engines available'. Then select 'Download and Install', then 'Update'.
-  * You should now have an engine that says something like 
- 
-If this step was done correctly, it'll now look something like this with both an Installed Engine and a Wrapper Version: 
-![Sample](/images/Wineskin.jpeg)
+* Open Sikarugir creator. Where it says 'No engine selected', click change. Then click the download icon next to WS11WineCX21.2.0. 
 
-**NOTE**: WS11WineCX64Bit22.1.1-8 works, but newer ones might not. If the later version fails, try this version.
- 
-* After that, you'll want to click 'Create New Blank Wrapper'. 
+* After that, you'll want to click 'Create'. 
   * Name it 'beipmu' (it'll append .app to it)
-  * Press ok. It'll take a few moments.
+  * Press save. It'll take a few moments, with wine-preloader popping up and closing several times. 
  
-* When it finishes, a popup will appear. Select 'Show Wrapper in Finder'
+* When it finishes, a popup will appear. Select 'Show in Finder'
   * Move it to an easily accessible location.
-  * Click it and select 'Install Software'.
-  * Select 'Move a Folder Inside'.
+  * Click it and select 'Install Software' in the bottom left.
+  * In the new window, select 'Copy a Folder Inside'.
   * Find the unzipped Beipmu folder (like beipmu_323_x64 or whatever) and select it.
-  * In the new 'Choose Executable' menu, select beipmu.exe. Press OK, then Quit.
+  * In the new 'Choose Executable' menu, select beipmu.exe. Press OK.
+  * Close the 'Configure' window.
 
 # Running BeipMU
 
-Click the beipmu.app wrapper again. It should now launch Beipmu in Wineskin Winery.
+Open beipmu.app again. It should now launch Beipmu.
 
 At this point, you'll definitely find out if you have the correct font file or not. There won't be any icons in the bottom left corner.
 
